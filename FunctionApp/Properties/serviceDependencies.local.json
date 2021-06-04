@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "storage1": {
+      "type": "storage.emulator",
+      "connectionId": "AzureWebJobsStorage"
+    },
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/financialstatement/databases/fsDB",
+      "type": "mssql.azure",
+      "connectionId": "sqldb_connection",
+      "secretStore": "LocalSecretsFile"
+    }
+  }
+}
